@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router basename="/~mui/">
         <div className="App">
           <Header />
           
