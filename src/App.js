@@ -7,13 +7,15 @@ import Home from './Home.js';
 import Header from './Header.js';
 import Company from './Company.js';
 import Footer from './Footer.js';
+import About from './About.js';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <Home />
+        {/* <Home /> */}
+        <About />
         <Company />
         <Footer />
       </div>
