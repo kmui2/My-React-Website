@@ -8,17 +8,21 @@ import Header from './Header.js';
 import Company from './Company.js';
 import Footer from './Footer.js';
 import About from './About.js';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        {/* <Home /> */}
-        <About />
-        <Company />
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+          <Company />
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

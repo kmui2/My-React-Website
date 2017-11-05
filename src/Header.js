@@ -3,6 +3,7 @@ import './App.css';
 import './images/iphone.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import 'font-awesome/css/font-awesome.min.css';
+import { Link } from 'react-router-dom';
 
 
 class Header extends React.Component {
@@ -19,8 +20,8 @@ class Header extends React.Component {
                             <Col xs={12} sm={10} md={10} lg={10}>
                                 <nav id="navbar">
                                     <ul>
-                                        <li className="current"><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><Link to="/">Home</Link></li>
+                                        <li><Link to="/about">About</Link></li>
                                         <li><a href="services.html">Services</a></li>
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
