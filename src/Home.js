@@ -3,6 +3,7 @@ import './App.css';
 import './images/iphone.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import 'font-awesome/css/font-awesome.min.css';
+import { Parallax } from 'react-parallax';
 
 
 class Home extends React.Component {
@@ -11,14 +12,18 @@ class Home extends React.Component {
             <div className="Home">
                 {/* <!-- SHOWCASE --> */}
                 <section id="showcase">
-                    <Grid fluid className="container">
-                        <Row className="center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
-                            <Col xs={10} sm={10} md={10} lg={7} className="showcase-content">
-                                <h1>Welcome to <span className="primary-text">AppTheme</span></h1>
-                                <p>A template built with HTML5, CSS3 and Flexboxgrid</p>
-                            </Col>
-                        </Row>
-                    </Grid>
+                    <Parallax bgImage={require('./images/madison.jpg')} strength={400}>
+                        <Grid fluid className="container">
+                            <Row className="center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+                                <Col xs={10} sm={10} md={10} lg={7} className="showcase-content">
+
+                                    <img src={require('./images/profile.jpg')} id="profile-pic" />
+                                    <h1>Welcome to <span className="primary-text">AppTheme</span></h1>
+                                    <p>A template built with HTML5, CSS3 and Flexboxgrid</p>
+                                </Col>
+                            </Row>
+                        </Grid>
+                    </Parallax>
                 </section>
 
                 {/* <!-- FEATURES --> */}
