@@ -32,44 +32,43 @@ class Home extends React.Component {
                     <Grid fluid className="container">
                         <Row className="center-xs center-sm center-md center-lg">
                             <Col xs={12} sm={12} md={12} lg={12}>
-                                <h2>Core Features</h2>
-                                <p>What's Included</p>
+                                <h2>Skills</h2>
 
                                 {/* <!-- ICON ROW 1 --> */}
                                 <Row className="center-xs center-sm center-md center-lg">
                                     <Col xs={12} sm={4} md={4} lg={4}>
-                                        <i className="fa fa-dashboard"></i><br />
-                                        <h4>Fully Optimized</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                        <i className="fa fa-github"></i><br />
+                                        <h4>GitHub User</h4>
+                                        <p>Personal and Work Experience with using VC, especially GitHub.</p>
                                     </Col>
                                     <Col xs={12} sm={4} md={4} lg={4}>
-                                        <i className="fa fa-question-circle-o"></i><br />
-                                        <h4>Free Support</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                        <i className="fa fa-laptop"></i><br />
+                                        <h4>Object Oriented Programing</h4>
+                                        <p>Knowledge in OOP languages including Python, Java, and C++.</p>
                                     </Col>
                                     <Col xs={12} sm={4} md={4} lg={4}>
-                                        <i className="fa fa-rocket"></i><br />
-                                        <h4>Free upgrades</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                        <i className="fa fa-server"></i><br />
+                                        <h4>Backend Development</h4>
+                                        <p>Database and Server/API management using NodeJS and MongoDB.</p>
                                     </Col>
                                 </Row>
 
                                 {/* <!-- ICON ROW 2 --> */}
                                 <Row className="center-xs center-sm center-md center-lg">
                                     <Col xs={12} sm={4} md={4} lg={4}>
-                                        <i className="fa fa-line-chart"></i><br />
-                                        <h4>UpTime Guarantee</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                        <i className="fa fa-database"></i><br />
+                                        <h4>SQL Database Management</h4>
+                                        <p>Worked on creating schemas and queries using SQLite and building a DMS using C++.</p>
                                     </Col>
                                     <Col xs={12} sm={4} md={4} lg={4}>
-                                        <i className="fa fa-users"></i><br />
-                                        <h4>Multi-User</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                        <i className="fa fa-html5"></i><br />
+                                        <h4>Frontend Development</h4>
+                                        <p>Experience in HTML/CSS/JS and web frameworks ReactJS and Angular</p>
                                     </Col>
                                     <Col xs={12} sm={4} md={4} lg={4}>
-                                        <i className="fa fa-plug"></i><br />
-                                        <h4>Plug & Play</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                        <i className="fa fa-android"></i><br />
+                                        <h4>Mobile</h4>
+                                        <p>Learning how to build Android Apps using Android Studio and ReactNative</p>
                                     </Col>
                                 </Row>
 
