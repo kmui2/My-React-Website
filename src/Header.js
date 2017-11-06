@@ -14,10 +14,10 @@ class Header extends React.Component {
                 <header id="main-header">
                     <Grid fluid className="container">
                         <Row className="end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
-                            <Col xs={12} sm={2} md={2} lg={2}>
-                                <h1><span className="primary-text">App</span>Theme</h1>
+                            <Col xs={12} sm={3} md={3} lg={3}>
+                                <h1><span className="primary-text">Kevin</span> Mui</h1>
                             </Col>
-                            <Col xs={12} sm={10} md={10} lg={10}>
+                            <Col xs={12} sm={9} md={9} lg={9}>
                                 <nav id="navbar">
                                     <ul>
                                         <li><Link to="/">Home</Link></li>

@@ -15,9 +15,10 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
           <Header />
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
           <Company />
           <Footer />
         </div>

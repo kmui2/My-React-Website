@@ -67,6 +67,7 @@ img{
   font-size:40px;
   margin:0;
   padding-bottom:20px;
+  line-height:1;
 }
 
 #showcase p{
@@ -75,7 +76,7 @@ img{
 }
 
 #showcase .showcase-content{
-  background-color:rgba(36, 36, 36, 0.459);
+  background-color:rgba(36, 36, 36, 0.712);
   color:#fff;
   border-radius:90px;
   padding:40px;
