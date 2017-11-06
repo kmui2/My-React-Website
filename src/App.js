@@ -16,7 +16,6 @@ class App extends React.Component {
       <Router basename="/~mui/">
         <div className="App">
           <Header />
-          
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
           <Company />
