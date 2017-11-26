@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import './images/iphone.png';
 import 'font-awesome/css/font-awesome.min.css';
 import Home from './components/Home.js';
 import Navbar from './components/Navbar.js';
