@@ -7,6 +7,7 @@ import Navbar from './components/Navbar.js';
 import Company from './components/Company.js';
 import Footer from './components/Footer.js';
 import About from './components/About.js';
+import ToDo from './components/ToDo.js';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends React.Component {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Navbar />
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/todo" component={ToDo} />
           <Company />
           <Footer />
         </div>
