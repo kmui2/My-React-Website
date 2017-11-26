@@ -1,13 +1,11 @@
 import React from 'react';
-import './App.css';
 import './images/iphone.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Button } from 'react-bootstrap';
 import 'font-awesome/css/font-awesome.min.css';
 import { Parallax } from 'react-parallax';
 
 
-class Home extends React.Component {
+export default class Home extends React.Component {
     render() {
         return (
             <div className="Home">
@@ -17,10 +15,10 @@ class Home extends React.Component {
                         <Grid fluid className="container">
                             <Row className="center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
                                 <Col xs={10} sm={10} md={10} lg={7} className="showcase-content">
-                                    <img src={require('./images/profile.jpg')} id="profile-pic" />
+                                    <img alt="profile-pic" src={require('./images/profile.jpg')} id="profile-pic" />
                                     <h1>Welcome to <span className="primary-text">Kevin Mui's</span> Website</h1>
-                                    <p>Full Stack NodeJS Developer<br/> Computer Science and Engineering Major</p> <br />
-                                    <Button href="https://www.overleaf.com/read/xvnsdhxjxyzw" bsStyle="primary" bsSize="large">Resume</Button>
+                                    <p>Full Stack NodeJS Developer<br/> Computer Science and Engineering Major</p>
+                                    <a href="https://www.overleaf.com/read/xvnsdhxjxyzw" class="fancy-button bg-gradient1"><span><i className="fa fa-file-text-o"></i> Resume</span></a>
                                 </Col>
                             </Row>
                         </Grid>
@@ -81,28 +79,29 @@ class Home extends React.Component {
 
                 {/* <!-- INFO SECTION --> */}
                 <section id="info">
+                    <Parallax bgImage={require('./images/info-bg.jpg')} strength={400}>
                     <Grid fluid className="container">
                         <Row className="center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
                             <Col xs={12} sm={6} md={6} lg={6}>
                                 <img src={require("./images/iphone.png")} alt="" />
                             </Col>
                             <Col xs={12} sm={6} md={6} lg={6}>
-                                <h2>Core Features</h2>
+                                <h2>Experience</h2>
                                 <ul>
-                                    <li><i className="fa fa-check"></i> Fully Optimized</li>
-                                    <li><i className="fa fa-check"></i> Free Support</li>
-                                    <li><i className="fa fa-check"></i> Free Upgrades</li>
-                                    <li><i className="fa fa-check"></i> UpTime Guarantee</li>
-                                    <li><i className="fa fa-check"></i> Mulitple Users</li>
-                                    <li><i className="fa fa-check"></i> Plug & Play</li>
+                                    <li><i className="fa fa-check"></i> ReactJS <img alt="reactjs" className="icons" src={require('./images/reactjs.png')} /></li>
+                                    <li><i className="fa fa-check"></i> Angular <img alt="angular" className="icons" src={require('./images/angular.png')} /></li>
+                                    <li><i className="fa fa-check"></i> NodeJS <img alt="nodejs" className="icons" src={require('./images/node.png')} /></li>
+                                    <li><i className="fa fa-check"></i> Java <img alt="java" className="icons" src={require('./images/java.png')} /></li>
+                                    <li><i className="fa fa-check"></i> C++ <img alt="c++" className="icons" src={require('./images/cpp.png')} /></li>
+                                    <li><i className="fa fa-check"></i> MongoDB <img alt="mongodb" className="icons" src={require('./images/mongodb.png')} /></li>
+                                    <li><i className="fa fa-check"></i> SQLite <img alt="sqlite" className="icons" src={require('./images/sqlite.png')} /></li>
                                 </ul>
                             </Col>
                         </Row>
                     </Grid>
+                    </Parallax>
                 </section>
             </div>
         );
     }
 }
-
-export default Home;

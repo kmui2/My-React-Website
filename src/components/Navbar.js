@@ -1,16 +1,15 @@
 import React from 'react';
-import './App.css';
 import './images/iphone.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import 'font-awesome/css/font-awesome.min.css';
 import { Link } from 'react-router-dom';
 
 
-class Header extends React.Component {
+export default class Navbar extends React.Component {
     render() {
-        return (
-            <div className="Header">
-                {/* <!-- HEADER --> */}
+    return (
+            <div className="Navbar">
+                {/* <!-- Navbar --> */}
                 <header id="main-header">
                     <Grid fluid className="container">
                         <Row className="end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
@@ -34,5 +33,3 @@ class Header extends React.Component {
         );
     }
 }
-
-export default Header;

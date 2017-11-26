@@ -1,11 +1,10 @@
 import React from 'react';
-import './App.css';
 import './images/iphone.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import 'font-awesome/css/font-awesome.min.css';
 
 
-class Company extends React.Component {
+export default class Company extends React.Component {
     render() {
         return (
             <div className="Company">
@@ -40,5 +39,3 @@ class Company extends React.Component {
         );
     }
 }
-
-export default Company;
