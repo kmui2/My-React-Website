@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import './materialize/materialize.scss';
+import 'materialize-css/dist/js/materialize.min.js'
+import 'materialize-css/dist/css/materialize.min.css'
 import 'font-awesome/css/font-awesome.min.css';
 import Home from './components/Home.js';
 import Navbar from './components/Navbar.js';
@@ -15,6 +18,7 @@ class App extends React.Component {
       <Router>
         <div className="App">
           {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" /> */}
+			    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
           <Navbar />
           <div id="content">
             <Route exact path="/" component={Home} />

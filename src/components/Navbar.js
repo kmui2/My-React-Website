@@ -12,12 +12,12 @@ export default class Navbar extends React.Component {
                 {/* <!-- Navbar --> */}
                 <header id="main-header">
                     <Grid fluid className="container">
-                        <Row className="end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
-                            <Col xs={12} sm={3} md={3} lg={3}>
+                        <Row className="end-sm end-md end-lg bottom-xs bottom-xs bottom-sm bottom-md bottom-lg">
+                            <Col xs={12} sm={3} md={3} lg={3} id="name">
                                 <h1><span className="primary-text">Kevin</span> Mui</h1>
                             </Col>
-                            <Col xs={12} sm={9} md={9} lg={9}>
-                                <nav id="navbar">
+                            <Col xs={12} sm={9} md={9} lg={9} id="col-nav">
+                                <div id="navbar">
                                     <ul>
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/about">About</Link></li>
@@ -25,7 +25,7 @@ export default class Navbar extends React.Component {
                                         <li><a href="services.html">Services</a></li>
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
-                                </nav>
+                                </div>
                             </Col>
                         </Row>
                     </Grid>

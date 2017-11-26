@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button, Icon} from 'react-materialize'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 
@@ -39,6 +40,9 @@ export default class ToDo extends React.Component {
 	render() {
 		return (
 			<div className="ToDo">
+				<Button waves='light'>
+					<Icon>thumb_up</Icon>
+				</Button>
 				<form onSubmit={this.onSubmit}>
 					<input value={this.state.term} onChange={this.onChange} />
 					<button>Submit</button>

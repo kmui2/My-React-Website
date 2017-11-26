@@ -27,7 +27,16 @@ img {
 
 /* NAVBAR */
 #navbar {
+  vertical-align: bottom;
+  font-size: 20px;
   text-transform: uppercase; }
+#col-nav {
+  vertical-align: bottom;
+}
+
+#name {
+  height: 10vh
+}
 
 #navbar li {
   display: inline;
