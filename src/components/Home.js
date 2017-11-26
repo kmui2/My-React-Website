@@ -1,5 +1,5 @@
 import React from 'react';
-import './images/iphone.png';
+
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { Parallax } from 'react-parallax';
@@ -18,7 +18,7 @@ export default class Home extends React.Component {
                                     <img alt="profile-pic" src={require('./images/profile.jpg')} id="profile-pic" />
                                     <h1>Welcome to <span className="primary-text">Kevin Mui's</span> Website</h1>
                                     <p>Full Stack NodeJS Developer<br/> Computer Science and Engineering Major</p>
-                                    <a href="https://www.overleaf.com/read/xvnsdhxjxyzw" class="fancy-button bg-gradient1"><span><i className="fa fa-file-text-o"></i> Resume</span></a>
+                                    <a href="https://www.overleaf.com/read/xvnsdhxjxyzw" className="fancy-button bg-gradient1"><span><i className="fa fa-file-text-o"></i> Resume</span></a>
                                 </Col>
                             </Row>
                         </Grid>
