@@ -1,7 +1,7 @@
 import React from 'react';
 import './images/iphone.png';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import 'font-awesome/css/font-awesome.min.css';
+
 
 
 export default class Company extends React.Component {

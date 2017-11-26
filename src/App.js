@@ -17,9 +17,11 @@ class App extends React.Component {
         <div className="App">
           {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" /> */}
           <Navbar />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/todo" component={ToDo} />
+          <div id="content">
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/todo" component={ToDo} />
+          </div>
           <Company />
           <Footer />
         </div>
