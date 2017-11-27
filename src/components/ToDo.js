@@ -1,11 +1,11 @@
 import React from 'react';
-import {Button, Icon} from 'react-materialize'
+import {Button, Icon, Input} from 'react-materialize'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 
 const List = props => (
 	<ul>
-		{props.items.map((item, index) => <li key={index}>{item}<a href="#" onClick={props.handleDelete.bind(this,index)}>[X]</a></li>)}
+		{props.items.map((item, index) => <li key={index}><h4>{item} <Button floating className='red' small waves='light' icon='delete' onClick={props.handleDelete.bind(this,index)}>[X]</Button></h4></li>)}
 	</ul>
 );
 
@@ -39,12 +39,9 @@ export default class ToDo extends React.Component {
 		return (
 			<div className="ToDo">
 				<Grid fluid className="container">
-					<Button waves='light'>
-						<Icon>thumb_up</Icon>
-					</Button>
 					<form onSubmit={this.onSubmit}>
-						<input value={this.state.term} onChange={this.onChange} />
-						<button>Submit</button>
+						<Input label="New Item" s={6} value={this.state.term} onChange={this.onChange} required/>
+						<Button>Submit</Button>
 					</form>
 					<List handleDelete={this.handleDelete} items={this.state.items} />
 				</Grid>
