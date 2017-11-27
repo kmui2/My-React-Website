@@ -5,9 +5,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 
 const List = props => (
 	<ul>
-		{
-			props.items.map((item, index) => <li key={index}>{item}<a href="#" onClick={props.handleDelete.bind(this,index)}>[X]</a></li>)
-		}
+		{props.items.map((item, index) => <li key={index}>{item}<a href="#" onClick={props.handleDelete.bind(this,index)}>[X]</a></li>)}
 	</ul>
 );
 
@@ -40,14 +38,16 @@ export default class ToDo extends React.Component {
 	render() {
 		return (
 			<div className="ToDo">
-				<Button waves='light'>
-					<Icon>thumb_up</Icon>
-				</Button>
-				<form onSubmit={this.onSubmit}>
-					<input value={this.state.term} onChange={this.onChange} />
-					<button>Submit</button>
-				</form>
-				<List handleDelete={this.handleDelete} items={this.state.items} />
+				<Grid fluid className="container">
+					<Button waves='light'>
+						<Icon>thumb_up</Icon>
+					</Button>
+					<form onSubmit={this.onSubmit}>
+						<input value={this.state.term} onChange={this.onChange} />
+						<button>Submit</button>
+					</form>
+					<List handleDelete={this.handleDelete} items={this.state.items} />
+				</Grid>
 			</div>
 		);
 	}

@@ -148,6 +148,7 @@ img {
 
 /* FOOTER */
 #main-footer {
+  padding: 1px;
   background: #56a79a;
   color: #fff; }
 
