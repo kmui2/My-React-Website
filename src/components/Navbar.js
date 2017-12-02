@@ -21,9 +21,7 @@ export default class Navbar extends React.Component {
                                     <ul>
                                         <li><Link to="/">Home</Link></li>
                                         <li><Link to="/about">About</Link></li>
-                                        <li><Link to="/todo">ToDo</Link></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><Link to="/projects">Projects</Link></li>
                                     </ul>
                                 </div>
                             </Col>
