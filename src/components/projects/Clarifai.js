@@ -8,6 +8,7 @@ import $ from 'jquery';
 import C3Chart from 'react-c3js';
 import 'c3/c3.css';
 import c3 from 'c3';
+import axios from 'axios';
 const app = new ClarifaiLib.App({
 	apiKey: 'fe578d618cf24fcc87df096b29b1d41f'
 });
@@ -66,6 +67,7 @@ export default class Clarifai extends React.Component {
 		nextState.colors = response.outputs[0].data.colors;
 		let boxes = ['box1', 'box2', 'box3', 'box4', 'box5', 'box6', 'box7', 'box8', 'box9'];
 		let params = '';
+		let leds = [];
 		for (let i = 0; i < boxes.length; i++) {
 			let hex = 'white';
 			if (nextState.colors[i]) {
@@ -73,6 +75,7 @@ export default class Clarifai extends React.Component {
 				nextState.data.columns.push([hex, nextState.colors[i].value * 100]);
 				nextState.data.colors[hex] = hex;
 				hex = hex.replace('#', '');
+				leds.push(hex);
 			}
 			params += boxes[i] + '=' + hex + '&';
 		}
@@ -82,6 +85,14 @@ export default class Clarifai extends React.Component {
 		this.chart.unload();
 		setTimeout(this.reloadPie, 300);
 		console.log(this.state);
+		axios.post('http://104.131.24.33:8003/leds', {leds: leds})
+		.then(function (response) {
+		  console.log(response);
+		})
+		.catch(function (error) {
+		  console.log(error);
+		});
+		
 	}
 
 	handleClick = () => {
