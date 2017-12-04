@@ -80,10 +80,10 @@ export default class Home extends React.Component {
                 {/* <!-- INFO SECTION --> */}
                 <section id="info">
                     <Parallax bgImage={require('./images/info-bg.jpg')} strength={400}>
-                    <Grid fluid className="container">
+                    <Grid fluid className="container" id= "info">
                         <Row className="center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
                             <Col xs={12} sm={6} md={6} lg={6}>
-                                <img src={require("./images/iphone.png")} alt="" />
+                                <img src={require("./images/hackathon.jpg")} alt="" />
                             </Col>
                             <Col xs={12} sm={6} md={6} lg={6}>
                                 <h2>Experience</h2>
